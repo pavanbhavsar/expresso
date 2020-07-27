@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/all.css">
+    <title>PORTO THE FOOD DELIVERY COMPANY</title>
+    <style>
+        html
+        {
+            scroll-behavior: smooth;
+        }
+        body
+        {
+            background: #E3E3E3;
+        }
+        .lists
+        {
+            margin: 0;
+            padding:0 ;
+        }
+        .lists ul
+        {
+            display: flex;
+        }
+        .lists ul li
+        {
+            padding: 0 15px;
+            list-style: none;
+            text-transform: uppercase;
+        }
+
+        .lists ul li:nth-child(1)
+        {
+            font-size: 16px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: #404341;
+            text-decoration: underline solid #404341;
+            text-underline-offset: 10px;
+        }
+        .lists ul li:nth-child(2) a
+        {
+            font-size: 14px;
+             font-weight: bold;
+            font-family: sans-serif;
+            color: #404341;
+            text-decoration: none;
+
+        }
+
+        .lists ul li:nth-child(3) a
+        {
+            font-size: 14px;
+             font-weight: bold;
+            font-family: sans-serif;
+            color: #404341;
+            text-decoration: none;
+        }
+
+
+        .lists ul li:nth-child(4) a
+        {
+            font-size: 14px;
+             font-weight: bold;
+            font-family: sans-serif;
+            color: #404341;
+            text-decoration: none;
+        }
+        .lists ul li a
+        {
+            transition: 0.5s;
+            padding: 5px 10px;
+            box-sizing: border-box;
+        }
+
+        .lists ul li a:hover
+        {
+            background: #FFD630;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+            border-radius: 4px;
+            text-shadow: 0 4px 2px rgba(0,0,0,0.3);
+        }
+
+        .container
+        {
+            margin-top: 50px;
+            width: 90%;
+            height: 500px;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            margin-left: 55px;
+            box-sizing: border-box;
+            box-shadow: 0 5px 15px  rgba(0,0,0,0.3);
+            overflow: hidden;
+            background: #FAF9F9;
+        }
+        .container img
+        {
+            position: relative;
+            height: 300px;
+            margin-top: 80px;
+            margin-left: 50px;
+        }
+
+
+
+        .container p
+        {
+            position: relative;
+            margin-left: 500px;
+            margin-top: -300px;
+            font-family: sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            color:#404341 ;
+
+            animation-name: animate1;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+        }
+        @keyframes animate1 {
+            0%
+            {
+                margin-left: 200px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            30%
+            {
+                margin-left: 300px;
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            70%
+            {
+                margin-left: 400px;
+                opacity:0;
+                visibility: hidden;
+            }
+            95%
+            {
+                opacity: 0.5;
+                visibility: visible;
+            }
+            99%
+            {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .container p span
+        {
+            font-size: 18px;
+            color: #787179;
+        }
+        .container form
+        {
+            position: relative;
+            margin-left: 500px;
+            padding-top: 5px;
+        }
+        .container input[type="text"]
+        {
+            width: 350px;
+            height: 30px;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #32343A;
+            font-weight: bold;
+            font-family: sans-serif;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            border: none;
+        }
+        .container input[type="submit"]
+        {
+            height: 40px;
+            width: 80px;
+            padding: 10px;
+            background: #FFD630;
+            box-sizing: border-box;
+            color: #32343A;
+            font-weight: bold;
+            font-family: sans-serif;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            border: none;
+            margin-right: 10px;
+        }
+        .container .partition
+        {
+            position: absolute;
+            height: 2px;
+            width: 20%;
+            background: #ABADA9;
+            margin-top: 220px;
+            margin-left: 300px;
+            transform: rotate(90deg);
+        }
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------------------------------------*/
+
+
+        .container2
+        {
+            margin-top: 40px;
+            display:flex;
+            height: 571px;
+            width: 90%;
+            margin-left: 55px;
+            overflow: hidden;
+        }
+        .part1
+        {
+            width: 50%;
+            height: 100%;
+            background: #FFD630;
+            border-radius: 20px 0 0 20px;
+            overflow: hidden;
+        }
+        .part1 .heading h1
+        {
+            position: relative;
+            font-size: 35;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #32343A;
+            margin-left: 53px;
+            margin-top: 50px;
+            text-decoration: underline solid #32343A;
+            text-underline-offset: 10px;
+        }
+        .part1 .content2
+        {
+            position: relative;
+            margin-left: 50px;
+            font-family: sans-serif;
+            color: #404341;
+            margin-top: 40px;
+        }
+
+        .part1 .content2  span
+        {
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .part1 .content2 p
+        {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 30px;
+            word-spacing: 2px;
+            color: #666666;
+        }
+        /*----------------PART  -   2---------------------------------------------------------------------*/
+        .part2
+        {
+            width:50%;
+            height: 100%;
+            background: #FFD630;
+            border-radius: 0 20px 20px 0;
+        }
+        .part2 .a
+        {
+            border:0 solid transparent;
+            height: 250px;
+            width:250px;
+            box-sizing: border-box;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+            border-radius: 10px;
+            overflow: hidden;
+            background: #FFD630;
+            margin-top: 20px;
+            margin-left: 130px;
+        }
+        .part2 .a .order
+        {
+            height: 250px;
+            width:250px;
+            transition: 0.5s;
+        }
+
+        .part2 .a:hover .order
+        {
+            height: 110px;
+        }
+        .part2 .a .order img
+        {
+            height: 100px;
+            padding-top: 80px;
+            padding-left: 70px;
+            transition: 0.5s;
+        }
+        .part2 .a:hover .order img
+        {
+            padding-top: 20px;
+        }
+
+
+
+        .part2 .a .data
+        {
+            height: 125px;
+            width:250px;
+            background: #32343A;
+            box-sizing: border-box;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: #E3E3E3;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 10px 10px 0 0;
+        }
+        .part2 .a .data p
+        {
+            padding-top: 30px;
+        }
+
+
+
+
+
+
+
+
+        .part2 .b
+        {
+            border:0 solid transparent;
+            height: 250px;
+            width:250px;
+            margin-top: 34px;
+            margin-left: 130px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+            background: #FFD630;
+            overflow: hidden;
+        }
+
+        .part2 .b .tasty
+        {
+            height: 250px;
+            width:250px;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+        .part2 .b:hover .tasty
+        {
+            height: 125px;
+        }
+
+        .part2 .b .tasty img
+        {
+            height: 100px;
+            margin-top: 64px;
+            margin-left: 70px;
+            transition: 0.5s;
+        }
+        .part2 .b:hover .tasty img
+        {
+            margin-top: 15px;
+        }
+        .part2 .b .data2
+        {
+            box-sizing: border-box;
+            height: 125px;
+            width:250px;
+            background: #32343A;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: sans-serif;
+            color: #E3E3E3;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+        }
+        .part2 .b .data2 p
+        {
+            margin-top: 30px;
+            letter-spacing: 2px;
+        }
+/*----------------------------------------------PART  -  3----------------------------*/
+        .part3
+        {
+            display: flex;
+            height: 571px;
+            width: 90%;
+            margin-left: 55px;
+            margin-top: 40px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .left
+        {
+            width:50%;
+            height: 100%;
+            background: #FAF9F9;
+            border-radius: 20px 0 0 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .heading2
+        {
+            position: relative;
+            margin-top: 60px;
+            margin-left: 40px;
+            font-family: sans-serif;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            text-decoration: solid #32343A underline;
+            text-underline-offset: 15px;
+            font-weight: bold;
+            color: #32343A;
+        }
+
+        .reviews
+        {
+            margin-left: 35px;
+            margin-top: 50px;
+            font-family: sans-serif;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: bold;
+
+            color: #404341;
+        }
+        .reviews p:nth-child(2)
+        {
+            margin-top: 40px;
+        }
+        .reviews p:nth-child(3)
+        {
+            margin-top: 40px;
+        }
+/*----------------------------------------------------------------------------------------*/
+        .right
+        {
+            width: 50%;
+            height: 100%;
+            background: #FAF9F9;
+            border-radius: 0 20px 20px 0;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .box1{
+            width: 200px;
+            height: 180px;
+            margin-left: 50px;
+            margin-top: 180px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.3);
+
+            transition: 0.5s;
+            background: #FFD630;
+        }
+        /*.box1:hover
+        {
+            background: #FFD630;
+        }*/
+        .box1 span
+        {
+            position: relative;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 20px;
+            float: right;
+            margin-top: -53px;
+            margin-right: 25px;
+            text-decoration: underline solid #404341;
+            text-underline-offset: 10px;
+            color: #404341;
+        }
+        .box1 img
+        {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .box1 p
+        {
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 15px;
+            word-spacing: 3px;
+            line-height: 20px;
+            letter-spacing: 1px;
+            color: #32343A;
+        }
+
+
+
+
+        .box2
+        {
+            width: 200px;
+            height: 180px;
+
+            float: right;
+            margin-right: 20px;
+            box-sizing: border-box;
+            margin-top: -320px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.3);
+
+
+            transition: 0.5s;
+            background: #FFD630;
+        }
+        /*.box2:hover
+        {
+            background: #FFD630;
+        }*/
+
+        .box2 span
+        {
+            float: right;
+            margin-top:-50px;
+            margin-right: 42px;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-decoration: underline solid #404341;
+            text-underline-offset: 10px;
+            color: #404341;
+        }
+
+        .box2 img
+        {
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+        .box2 p
+        {
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-size: 16px;
+            color: #1D1E2C;
+            font-weight: bold;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            padding-top: 5px;
+            word-spacing: 2px;
+        }
+
+
+
+        .box3
+        {
+            width: 200px;
+            height: 180px;
+            float: right;
+            box-sizing: border-box;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.3);
+            margin-top: -25px;
+
+            transition: 0.5s;
+            background: #FFD630;
+        }
+        /*.box3:hover
+        {
+            background: #FFD630;
+        }*/
+        .box3 span
+        {
+            float: right;
+            margin-top: -50px;
+            margin-right: 20px;
+            text-decoration: underline solid  #404341;
+            text-underline-offset: 10px;
+            color: #404341;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+        .box3 img
+        {
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .box3 p
+        {
+            font-size: 16px;
+            font-weight: bold;
+            font-family: sans-serif;
+            letter-spacing: 1px;
+            margin-left: 10px;
+            color: #1D1E2C;
+            word-spacing: 2px;
+            padding-top: 10px;
+        }
+
+
+ /*----------------------------------contact us page-------------------------------*/
+
+        .contact_us
+        {
+            display: flex;
+            height: 571px;
+            width: 90%;
+            margin-left: 55px;
+            margin-top: 40px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .A
+        {
+            height: 100%;
+            width: 50%;
+            background: #FFD630;
+            border-radius: 20px 0 0 20px;
+
+        }
+        .title
+        {
+            position: relative;
+            margin-top: 40px;
+            margin-left: 40px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #32343A;
+
+        }
+
+
+        .form form
+        {
+            margin-left: 30px;
+            padding: 20px 0;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #1D1E2C;
+        }
+        .form input
+        {
+            width:60%;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #404341;
+            background: #FFD630;
+            padding: 10px 0;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .form form button
+        {
+            border: none;
+            font-weight: bold;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background:#404341;
+            color: #FCF7FF;
+            height: 45px;
+            width: 95px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.4);
+
+
+            transition: 0.5s;
+        }
+        .form form button:hover
+        {
+            background: #FCF7FF;
+            color: #1D1E2C;
+        }
+/*------------------------------------------------------------------------------------*/
+        .B
+        {
+            height: 100%;
+            width: 50%;
+            background: #FFD630;
+            border-radius: 0 20px 20px 0;
+        }
+
+
+
+
+/*-----------------------contact us part 2--------------------------------------------------*/
+
+        .B .title2
+        {
+            position: relative;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #404341;
+            margin-top: 60px;
+            margin-left: 120px;
+
+        }
+
+
+        .title2:before
+        {
+            content: '';
+            position:absolute;
+            width: 70%;
+            height: 2px;
+            background: #404341;
+            transform: rotate(90deg);
+            top:250px;
+            left:-250px
+        }
+
+
+
+        .table table
+        {
+            margin-left: 50px;
+            margin-top: 80px;
+        }
+        .table table tr td
+        {
+            padding-left: 70px;
+            padding-top: 40px;
+            color: #1D1E2C;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="lists">
+    <ul>
+        <li>expresso</li>
+        <li><a href="#about_us">about us</a></li>
+        <li><a href="#review">reviews</a></li>
+        <li><a href="#contact">contact us</a></li>
+    </ul>
+</div>
+
+
+<div class="container">
+    <div class="partition">
+    </div>
+    <div class="content">
+        <img src="food-delivery.png">
+        <p>We deliver<br>food & beverages<br><span>We bring to your doorstep food and drinks, at anytime</span></p>
+        <form>
+            <input type="text" name="" placeholder="what do you need?">
+            <input type="submit" name="" value="search">
+        </form>
+    </div>
+</div>
+
+
+
+<div class="container2" id="about_us">
+    <div class="part1">
+        <div class="heading">
+            <h1>About us</h1>
+        </div>
+
+
+        <div class="content2">
+            <span>Hello,</span><br>
+            <p>In August of 2014, PORTO began operations by signing up a few restaurants in Koramangala, Bengaluru.
+                Soon enough, the first team of Hunger Saviors came into action to deliver food within 40 minutes.
+                Shortly after, PORTO raised its first round of funding and launched the app in May of 2015. Fun fact:
+                The technology that delivers great food right to your doorstep was completely developed <br>in-house!</p>
+        </div>
+    </div>
+
+
+
+    <div class="part2">
+        <div class="a">
+            <div class="order">
+                <img src="order.png">
+            </div>
+
+            <div class="data">
+                <p>get, what <br>you see</p>
+            </div>
+        </div>
+
+        <div class="b">
+
+            <div class="tasty">
+                <img src="tasty.png">
+            </div>
+
+            <div class="data2">
+                <p>Get the tastiest<br> food ever</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="part3" id="review">
+    <div class="left">
+
+
+        <div class="heading2">
+            <h1>Coustmer reviews</h1>
+        </div>
+
+
+        <div class="reviews">
+            <p>Reviews not only have the power to influence consumer decisions<br>but can strengthen a company's credibility.</p><p>Reviews have the power to gain customer trust,and they encourage people to interact with the company</p>
+            <p>So, here we have some of the reviews of our coustmers.</p>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="right">
+        <div class="sub_container">
+
+            <div class="box box1">
+                <div class="imgbox1">
+                    
+                    <img src="people.png">
+                </div>
+
+                <div class="contentA">
+                    <span>Mr.John</span>
+                   <p> "I got the best food at the estimated delivery time."</p>
+                </div>
+            </div>
+
+
+             <div class="box box2">
+                 <div class="imgbox2">
+                    <img src="pirate.png">
+                </div>
+
+                <div class="contentB">
+                    <span>Mr.Fury</span>
+                   <p> "The food is just like a Stormbreaker<br> happening into my stomach."</p>
+                </div>
+
+             </div>
+
+             <div class="box box3">
+                 <div class="imgbox3">
+                    <img src="girl.png">
+                </div>
+
+                <div class="contentC">
+                    <span>Ms.Serena</span>
+                   <p> "The best thing is that they are using Digital payment only."</p>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="contact_us" id="contact">
+    <div class="A">
+        <div class="title">
+            <h1>Any queries?<br>Contact with us.</h1>
+        </div>
+        <div class="form">
+            <form>
+                <label>Name</label>
+                <br>
+                <input type="text" placeholder="Pavan Bhavsar">
+                <br>
+                <br>
+                <br>
+                <br>
+
+
+
+                <label>Mobile No.</label>
+                <br>
+                <input type="text" placeholder="+91 99*** ***30">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                 <label>Email</label>
+                <br>
+                <input type="email" placeholder="abc@gmail.com">
+                <br>
+                <br>
+                <br>
+
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="B">
+        <div class="title2">
+            <h1>Reach Us :-</h1>
+        </div>
+
+
+       <div class="table">
+           <table>
+               <tr>
+                   <td>Email:-</td>
+                   <td>contactus@example.com</td>
+               </tr>
+
+               <tr>
+                   <td>Phone:-</td>
+                   <td>+41 56022 12722</td>
+               </tr>
+
+               <tr>
+                   <td>Address:-</td>
+                   <td>212 Truford Street,London</td>
+               </tr>
+           </table>
+       </div>
+    </div>
+</div>
+</body>
+</html>

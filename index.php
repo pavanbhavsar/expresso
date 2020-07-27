@@ -1,0 +1,1 @@
+<?php header("Location: Food_delivery_1.html"); ?>
